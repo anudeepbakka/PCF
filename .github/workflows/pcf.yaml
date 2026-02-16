@@ -53,4 +53,10 @@ jobs:
         working-directory: BB_PCF_Solution
         run: |
           dotnet restore
-          dotnet build --configuration Release --no-restore
+          dotnet build --configuration Debug --no-restore
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pcf-solution-build
+          path: BB_PCF_Solution/bin/**/*
