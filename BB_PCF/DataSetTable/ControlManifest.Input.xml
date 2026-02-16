@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="BB.PCF.DataTable" constructor="DataSetTable" version="0.0.1" display-name-key="DataSetTable" description-key="Custom table control with sorting for Contacts data" control-type="standard">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <data-set name="contactsDataSet" display-name-key="Contacts DataSet" description-key="Dataset bound to the Contacts table">
+    </data-set>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/DataSetTable.css" order="1" />
+    </resources>
+  </control>
+</manifest>
